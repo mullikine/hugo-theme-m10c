@@ -3,6 +3,12 @@ $dark-color: {{ .Site.Params.style.darkColor | default "#353b43" }};
 $light-color: {{ .Site.Params.style.lightColor | default "#afbac4" }};
 $lightest-color: {{ .Site.Params.style.lightestColor | default "#ffffff" }};
 $primary-color: {{ .Site.Params.style.primaryColor | default "#57cc8a" }};
+$darkwall: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/dark-wall.png";
+$arches: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/arches.png";
+$argyle: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/argyle.png";
+$arabesque: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/arabesque.png";
+$bright-squares: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/bright-squares.png";
+$fabric-dark: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/45-degree-fabric-dark.png";
 
 @import 'base';
 

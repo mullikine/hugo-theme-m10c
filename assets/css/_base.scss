@@ -9,7 +9,8 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  background: $dark-color;
+  /*background: $dark-color url($darkwall) repeat;*/
+  background: $dark-color url($arches) repeat;
   color: $light-color;
 }
 
