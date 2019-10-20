@@ -72,10 +72,25 @@ pre {
   overflow: auto;
 }
 
-p {
+dl {
+    padding: 0.8em;
+    border: 1px dashed #444;
+}
+
+dt {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+p,dd {
     code {
         color: $standout-color;
     }
+}
+
+dd {
+    font-size: 0.8em;
+    padding-top: 0.8em;
 }
 
 ::selection {
