@@ -68,9 +68,14 @@ pre {
   line-height: 1em;
   code {
     font-size: .8em;
-    
   }
   overflow: auto;
+}
+
+p {
+    code {
+        color: $standout-color;
+    }
 }
 
 ::selection {

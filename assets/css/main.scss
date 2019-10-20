@@ -1,7 +1,8 @@
 $darkest-color: {{ .Site.Params.style.darkestColor | default "#242930" }};
 $dark-color: {{ .Site.Params.style.darkColor | default "#353b43" }};
 $light-color: {{ .Site.Params.style.lightColor | default "#afbac4" }};
-$lightest-color: {{ .Site.Params.style.lightestColor | default "#ffffff" }};
+$lightest-color: {{ .Site.Params.style.lightestColor | default "#cfc" }};
+$standout-color: {{ .Site.Params.style.standoutColor | default "#f90" }};
 $primary-color: {{ .Site.Params.style.primaryColor | default "#57cc8a" }};
 $darkwall: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/dark-wall.png";
 $arches: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/arches.png";
