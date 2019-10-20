@@ -28,6 +28,24 @@ a {
   }
 }
 
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 40px 0;
+}
+
+table,
+th,
+td {
+    border: 1px dashed #444;
+    padding: 10px;
+}
+
+th {
+    color: var(--accent);
+}
+
 // Browsers seem to use a smaller default font-size with monospaced code
 // blocks (like 80% of the size of normal text) and that looks pretty bad with
 // small inline code-blocks in the middle of normal text (mainly because of
@@ -42,8 +60,11 @@ pre {
   // A larger monospaced block of text (that isn't mixed with normal text)
   // generally looks heavier than normal text with the same font size. For this
   // reason using a smaller monospaced font size makes sense in this situation.
+  padding: 0.2em;
+  line-height: 1em;
   code {
     font-size: .8em;
+    
   }
   overflow: auto;
 }

@@ -24,6 +24,7 @@
         {{ range .Site.Params.social }}
           <a target="_blank" href="{{ .url }}">{{ partial "icon.html" (dict "ctx" $ "name" .name ) }}</a>
         {{ end }}
+        <a href="http://mullikine.github.io/cv/">CV</a>
       </div>
     </header>
     <main class="app-container">
