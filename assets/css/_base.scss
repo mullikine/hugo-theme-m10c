@@ -93,6 +93,20 @@ dd {
     padding-top: 0.8em;
 }
 
+dd + dt {
+    padding-top: 1em;
+}
+
+hr {
+    margin: 2em;
+    border: 3px dashed #fff;
+    opacity: 0.1;
+}
+
+tbody {
+    font-size: 0.8em;
+}
+
 ::selection {
   background: rgba($light-color, .25);
 }
