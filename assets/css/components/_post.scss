@@ -4,8 +4,14 @@
 
 .post-content {
   pre {
-    border-left: 0.4em solid rgba($primary-color, .8);
-    padding-left: 1em;
+    /*border-left: 0.4em solid rgba($primary-color, .8);*/
+    border-top: 1px solid rgba($primary-color, .2);
+    border-left: 1px solid rgba($primary-color, .2);
+    border-bottom: 1px solid rgba(#000, .2);
+    border-right: 1px solid rgba(#000, .2);
+    opacity:0.7;
+    padding: 2em;
+    padding-left: 4em;
   }
 }
 
