@@ -82,10 +82,29 @@ dt {
     font-style: italic;
 }
 
-p,dd,h1,h2,h3,h4,h5 {
+p,dd,h1,h2,h3,h4,h5,th {
     code {
         color: $standout-color;
+        /* text-shadow: 0.1em 0.0em 0.5em #666666; */
     }
+}
+
+ul {
+    /* list-style: none; */
+}
+
+li::first-line {
+    /* color: #499; */
+    font-weight: bold;
+    /* font-style: italic; */
+}
+
+a.page-link {
+    color: $primary-color;
+}
+
+a.page-link:visited {
+    color: $primary-color;
 }
 
 dd {
