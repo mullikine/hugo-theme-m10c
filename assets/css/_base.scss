@@ -101,9 +101,14 @@ ul {
 
 li::first-line {
     /* color: #499; */
-    font-weight: bold;
+    /* This may be good for articles but it messes up the lists of articles */
+    /* font-weight: bold;*/
     /* font-style: italic; */
 }
+
+/* li.posts-list-item::first-line {
+    font-weight: bold;
+}*/
 
 a.page-link {
     color: $primary-color;
