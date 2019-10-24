@@ -11,6 +11,27 @@
   border: 0.5rem solid $primary-color;
 }
 
+.highlights {
+margin-top:0.5em;
+line-height:2em;
+}
+
+.highlights > a {
+  color: $light-color;
+  font-family: Palatino;
+  font-style: italic;
+  
+}
+
+/*.highlights {
+  max-width: 15rem;
+  max-height: 15rem;
+  border-radius: 100%;
+  background: $darkest-color;
+  padding: 2em 0 2em 0;
+  border: 1px solid $primary-color;
+}*/
+
 .app-container {
   padding: 2.5rem;
 }
