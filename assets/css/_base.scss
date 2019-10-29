@@ -45,10 +45,15 @@ table {
     margin: 40px 0;
 }
 
+th {
+background: $darkest-color url($fabric-dark) repeat;
+font-style:italic;
+}
+
 table,
 th,
 td {
-    border: 1px dashed #444;
+    border: 0.2em solid $darkest-color;
     padding: 10px;
 }
 
@@ -67,6 +72,11 @@ code {
 }
 
 pre {
+    background: #181818 url($fabric-dark) !important;
+    border-top: 0.1em solid #220000 !important;
+    border-left: 0.1em solid #350000 !important;
+    border-bottom: 0.1em solid #440000 !important;
+    border-right: 0.1em solid #440000 !important;
   // A larger monospaced block of text (that isn't mixed with normal text)
   // generally looks heavier than normal text with the same font size. For this
   // reason using a smaller monospaced font size makes sense in this situation.
@@ -76,6 +86,7 @@ pre {
     font-size: .8em;
   }
   overflow: auto;
+  overflow-x:hidden;
 }
 
 dl {
