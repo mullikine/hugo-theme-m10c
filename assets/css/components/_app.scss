@@ -2,13 +2,15 @@
   padding: 2.5em;
   background: $darkest-color url($fabric-dark) repeat;
   text-align: center;
+  /*background: url(/daffodil-wreath.png) no-repeat center center;*/
 }
 
 .app-header-avatar {
   max-width: 15rem;
   max-height: 15rem;
   border-radius: 100%;
-  border: 0.5rem solid $primary-color;
+  border: .5rem solid $primary-color;
+ 
 }
 
 .highlights {
@@ -34,6 +36,8 @@ line-height:2em;
 
 .app-container {
   padding: 2.5rem;
+  /*background: url(/daffodils1.png) no-repeat bottom right;*/
+  /*background-size: 20em;*/
 }
 
 .app-header-social {
