@@ -18,11 +18,20 @@ margin-top:0.5em;
 line-height:2em;
 }
 
-.highlights > a {
+.highlights a:not(.tag) {
   color: $light-color;
   font-family: Palatino;
   font-style: italic;
-  
+  line-height:1.2em;
+}
+
+.highlights a.tag {
+  font-size:0.7em;
+  line-height:1.6em;
+}
+
+.highlights .taglist {
+margin-top:0.5em;
 }
 
 /*.highlights {
