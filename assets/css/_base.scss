@@ -22,6 +22,7 @@ article img {
 
 h1, h2, h3, h4, h5, h6 {
   color: $lightest-color;
+  /*text-shadow: 2px 2px 4px #000000;*/
 }
 
 span.underline {
@@ -71,12 +72,20 @@ code {
   color: rgba($light-color, .8);
 }
 
+.MathJax_Display .MathJax .math {
+    background: #181818 url($fabric-dark) !important;
+    box-shadow: 0.2em 0.2em black;
+    padding: 1em 1.5em;
+    }
+
 pre {
     background: #181818 url($fabric-dark) !important;
-    border-top: 0.1em solid #220000 !important;
-    border-left: 0.1em solid #350000 !important;
-    border-bottom: 0.1em solid #440000 !important;
-    border-right: 0.1em solid #440000 !important;
+    /*border-top: 0.1em solid #334455 !important;
+    border-left: 0.1em solid #334455 !important;
+    border-bottom: 0.1em solid #334455 !important;
+    border-right: 0.1em solid #334455 !important;*/
+    border:0px !important;
+    box-shadow: 0.2em 0.2em black;
   // A larger monospaced block of text (that isn't mixed with normal text)
   // generally looks heavier than normal text with the same font size. For this
   // reason using a smaller monospaced font size makes sense in this situation.
@@ -84,7 +93,7 @@ pre {
   line-height: 1.6em;
   font-size: .7em;
   code {
-    
+
   }
   overflow: auto;
   /* overflow-x:hidden;*/
@@ -108,14 +117,17 @@ p,dd,dt,h1,h2,h3,h4,h5,th,td {
     }
 }
 article h1,h2,h3,h4,h5 {
+    margin-left:0em;
     opacity:0.7;
-    }
+}
 
 article h1, header.post-header h1 {
-    opacity: 0.5;
+    opacity: 0.7;
     text-decoration:underline;
     font-style:italic;
-    color:red;
+    /* vermillion */
+    color:#E34234;
+    /*font-weight:normal;*/
     font-family:serif;
     text-align:center;
 }

@@ -9,6 +9,8 @@
 
 .page-item {
   display: inline-block;
+/*font-weight:bold;*/
+font-size:1.2em;
   .page-link {
     display: block;
     padding: 0.285em 0.8em;
@@ -16,7 +18,8 @@
 
   &.active {
     .page-link {
-      color: $lightest-color;
+      color: $darkest-color;
+text-shadow: 0em 0.0em 0.5em $light-color;
       border-radius: 2em;
       background: $primary-color;
     }

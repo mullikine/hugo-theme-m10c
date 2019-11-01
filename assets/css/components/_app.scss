@@ -5,12 +5,17 @@
   /*background: url(/daffodil-wreath.png) no-repeat center center;*/
 }
 
+.app-header h1 {
+    font-size:1em;
+}
+
 .app-header-avatar {
   max-width: 15rem;
   max-height: 15rem;
   border-radius: 100%;
+  padding: 0.5em;
   border: .5rem solid $primary-color;
- 
+  /*border: .5rem solid #E34234;*/
 }
 
 .highlights {
@@ -32,6 +37,7 @@ line-height:2em;
 
 .highlights .taglist {
 margin-top:0.5em;
+line-height:1.5em;
 }
 
 /*.highlights {
