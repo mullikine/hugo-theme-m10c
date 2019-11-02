@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +12,9 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+  font-family: 'PT Serif', serif;
+
   /*background: $dark-color url($darkwall) repeat;*/
   background: $dark-color url($arches) repeat;
   color: $light-color;
@@ -46,6 +52,22 @@ table {
     margin: 40px 0;
 }
 
+div.highlight > div {
+    background: none !important;
+    padding: 0 !important;
+    /*border:1px solid red;*/
+    line-height:1em;
+}
+
+header.app-header {
+    h1 {
+        text-shadow: 1px 1px 1px #000000;
+    }
+    .highlights > a {
+        /*text-shadow: 1px 1px 1.5em #000000;*/
+    }
+}
+
 th {
 background: $darkest-color url($fabric-dark) repeat;
 font-style:italic;
@@ -62,12 +84,16 @@ th {
     color: var(--accent);
 }
 
+pre, code {
+    font-family: 'Source Code Pro', monospace;
+}
+
 // Browsers seem to use a smaller default font-size with monospaced code
 // blocks (like 80% of the size of normal text) and that looks pretty bad with
 // small inline code-blocks in the middle of normal text (mainly because of
 // the very noticeable difference in x-height). This CSS corrects that problem.
 code {
-    font-family: monospace,monospace;
+    /*font-family: monospace,monospace;*/
     font-size: 1em;
     color: rgba($light-color, .8);
 }
@@ -77,6 +103,20 @@ code {
     box-shadow: 0.2em 0.2em black;
     padding: 1em 1.5em;
 }
+
+.highlight {
+    box-shadow: 0.2em 0.2em black;
+    }
+
+.highlight {
+    tbody, tr {
+        display:block;
+    }
+    td + td {
+        width:100%
+    }
+}
+
 
 pre {
     background: #181818 url($fabric-dark) !important;
@@ -98,6 +138,15 @@ pre {
   overflow: auto;
   /* overflow-x:hidden;*/
   scrollbar-color: #220000 #440000;
+  /*margin-top:0 !important;*/
+}
+
+.highlight pre {
+    overflow:hidden;
+}
+
+.highlight pre + pre {
+    overflow:auto;
 }
 
 dl {
@@ -106,6 +155,8 @@ dl {
     border: 0.1em dashed #383838;
     background: url($binding-light);
     background: $dark-color ;
+    /*font-family: Bookman Old Style, Baskerville, Palatino;*/
+    font-family: 'PT Serif', serif;
 
     /*max-width: 50%;*/
     /*margin-right: 5%;*/
@@ -129,25 +180,40 @@ dd a {
 
 }
 
+
 p,dd,dt,h1,h2,h3,h4,h5,th,td {
     code {
         color: $standout-color;
         /* text-shadow: 0.1em 0.0em 0.5em #666666; */
     }
 }
+
+.highlight {
+p,dd,dt,h1,h2,h3,h4,h5,th,td {
+    code {
+        color: $light-color;
+        /* text-shadow: 0.1em 0.0em 0.5em #666666; */
+    }
+}
+}
+
 article h1,h2,h3,h4,h5 {
     margin-left:0em;
     opacity:0.7;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Tillana&display=swap');
+
 article h1, header.post-header h1 {
+    font-family: 'Tillana', cursive;
     opacity: 0.7;
     text-decoration:underline;
-    font-style:italic;
+    /*font-style:italic;*/
     /* vermillion */
     color:#E34234;
-    /*font-weight:normal;*/
-    font-family:serif;
+    // font-weight:normal;
+    font-size: 1.5em;
+    /*font-family:serif;*/
     text-align:center;
 }
 

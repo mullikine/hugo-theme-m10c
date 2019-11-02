@@ -14,9 +14,12 @@
         padding: 2em 4em 2.5em 3em;
         margin:0;
     }
-    pre, figure + pre, figure {
+    figure + pre, figure {
         margin-top:1em;
     }
+.highlight + .highlight {
+margin-top:1em;
+}
     figure {
         border-radius: 0.2em;
         // background: #f7f7f7 url($fabric-dark) repeat;
