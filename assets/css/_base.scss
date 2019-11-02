@@ -70,34 +70,15 @@ code {
     font-family: monospace,monospace;
     font-size: 1em;
     color: rgba($light-color, .8);
-
-    /*background:red;*/
-}
-
-.org-src-container > pre, div.highlight > pre > code {
-    min-width:50em;
-    display:inline-block;
-}
-
-code.language-text {
-    display:inline-block;
-    /*border: 1px solid red;*/
-    max-width: 30em;
-    max-height: 35em;
-    min-width:0;
-    overflow:auto;
 }
 
 .MathJax_Display .MathJax .math {
     background: #181818 url($fabric-dark) !important;
     box-shadow: 0.2em 0.2em black;
     padding: 1em 1.5em;
-    }
+}
 
 pre {
-    display:inline-block;
-    max-width:100%;
-    max-height: 50em;
     background: #181818 url($fabric-dark) !important;
     /*border-top: 0.1em solid #334455 !important;
     border-left: 0.1em solid #334455 !important;
