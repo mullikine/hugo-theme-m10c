@@ -17,8 +17,11 @@
     figure + pre, figure {
         margin-top:1em;
     }
-.highlight + .highlight {
+.highlight {
 margin-top:1em;
+}
+.highlight + .highlight {
+/*margin-top:1em;*/
 }
     figure {
         border-radius: 0.2em;

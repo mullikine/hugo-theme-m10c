@@ -149,6 +149,10 @@ pre {
     overflow:auto;
 }
 
+.highlight > pre {
+    overflow: auto;
+}
+
 dl {
     padding: 0.8em;
     padding-right:2em;
