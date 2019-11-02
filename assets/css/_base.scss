@@ -72,6 +72,14 @@ code {
   color: rgba($light-color, .8);
 }
 
+code.language-text {
+    display:inline-block;
+    /*border: 1px solid red;*/
+    max-width: 30em;
+    max-height: 40em;
+    overflow:auto;
+}
+
 .MathJax_Display .MathJax .math {
     background: #181818 url($fabric-dark) !important;
     box-shadow: 0.2em 0.2em black;
@@ -79,6 +87,9 @@ code {
     }
 
 pre {
+    display:inline-block;
+    max-width:100%;
+    max-height: 50em;
     background: #181818 url($fabric-dark) !important;
     /*border-top: 0.1em solid #334455 !important;
     border-left: 0.1em solid #334455 !important;
@@ -102,12 +113,31 @@ pre {
 
 dl {
     padding: 0.8em;
-    border: 1px dashed #444;
+    padding-right:2em;
+    border: 0.1em dashed #383838;
+    background: url($binding-light);
+    background: $dark-color ;
+
+    /*max-width: 50%;*/
+    /*margin-right: 5%;*/
+    /*float: right;*/
 }
 
 dt {
     font-size: 0.9em;
     font-style: italic;
+    color: #777;
+    font-weight:bold;
+}
+
+dd {
+    color: #666;
+}
+
+dd a {
+    display:inline-block;
+    text-decoration:underline;
+
 }
 
 p,dd,dt,h1,h2,h3,h4,h5,th,td {

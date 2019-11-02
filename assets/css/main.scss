@@ -1,5 +1,6 @@
 $darkest-color: {{ .Site.Params.style.darkestColor | default "#242930" }};
 $dark-color: {{ .Site.Params.style.darkColor | default "#353b43" }};
+$darker-color: {{ .Site.Params.style.darkerColor | default "#30383d" }};
 $light-color: {{ .Site.Params.style.lightColor | default "#afbac4" }};
 $lightest-color: {{ .Site.Params.style.lightestColor | default "#ccffcc" }};
 $standout-color: {{ .Site.Params.style.standoutColor | default "#ff9900" }};
@@ -9,6 +10,7 @@ $arches: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/arches.png
 $argyle: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/argyle.png";
 $absurdity: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/absurdity.png";
 $binding-dark: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/binding-dark.png";
+$binding-light: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/binding-light.png";
 $light-mesh: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/light-mesh.png";
 $tpx-tile: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/3px-tile.png";
 $arabesque: "{{ index .Site.Params "rootlink" | default .Site.BaseURL }}/arabesque.png";
