@@ -21,9 +21,14 @@ body {
 }
 
 article img {
-    opacity:0.6;
+    // opacity:0.6;
     max-height: 20em;
     max-width: 100%;
+}
+
+// asciinema
+article a > img {
+    opacity:0.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,12 +117,22 @@ code {
     tbody, tr {
         display:block;
     }
+    td pre {
+        font-size:1em;
+        padding:1em;
+        }
+    /* Why does this not work? */
+    td > pre > code > span {
+        margin-right:0 !important;
+    }
     td + td {
         width:100%
     }
 }
 
-
+tbody {
+    font-size: 0.8em;
+}
 pre {
     background: #181818 url($fabric-dark) !important;
     /*border-top: 0.1em solid #334455 !important;
@@ -130,7 +145,7 @@ pre {
   // generally looks heavier than normal text with the same font size. For this
   // reason using a smaller monospaced font size makes sense in this situation.
   padding: 0.2em;
-  line-height: 1.6em;
+  line-height: 1.2em;
   font-size: .7em;
   code {
 
@@ -139,6 +154,10 @@ pre {
   /* overflow-x:hidden;*/
   scrollbar-color: #220000 #440000;
   /*margin-top:0 !important;*/
+}
+
+tbody pre {
+    font-size: 0.9em;;
 }
 
 .highlight pre {
@@ -257,10 +276,6 @@ hr {
     margin: 2em;
     border: 3px dashed #fff;
     opacity: 0.1;
-}
-
-tbody {
-    font-size: 0.8em;
 }
 
 ::selection {
