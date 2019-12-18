@@ -286,7 +286,7 @@ For instance, you might declare:
 
 ```yaml
 params:
-  CopyrightHTML: "Copyright &#xA9; 2013 John Doe. All Rights Reserved."
+  CopyrightHTML: "Copyright &#xA9; 2013 Shane Mulligan. All Rights Reserved."
   TwitterUser: "spf13"
   SidebarRecentLimit: 5
 ```
