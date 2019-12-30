@@ -1,6 +1,7 @@
 {{ define "main" }}
   <article>
     <h1>{{ .Title }}</h1>
+    <p>{{ .Site.Params.description | default "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium." }}</p>
     <ul class="posts-list">
       {{ range $index, $element := .Paginator.Pages }}
         <li class="posts-list-item">

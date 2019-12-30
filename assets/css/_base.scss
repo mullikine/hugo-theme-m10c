@@ -20,6 +20,26 @@ body {
   color: $light-color;
 }
 
+article > p {
+    /* line-height:1.2em; */
+    /* display: inline-block; */
+    opacity:0.3;
+    border-radius: 2em;
+    border: 0.1em solid #E34234;
+    /* background: #E34234; */
+    font-family: 'Tillana', cursive;
+    font-weight: bold;
+    /*font-style:italic;*/
+    /* vermillion */
+    /* color:#802020; */
+    /* color: $dark-color; */
+    color: #E34234;
+    // font-weight:normal;
+    font-size: 1em;
+    /*font-family:serif;*/
+    text-align:center;
+}
+
 article img {
     // opacity:0.6;
     max-height: 20em;
