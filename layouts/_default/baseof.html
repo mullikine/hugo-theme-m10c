@@ -17,6 +17,15 @@
   </head>
   <body>
     <header class="app-header">
+<!-- Example: <link rel="alternate" type="application/rss+xml" href="https://example.com/index.xml" title="Site Title"> -->
+<!-- {{ with .OutputFormats.Get "rss" -}} -->
+<!--     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} -->
+<!-- {{ end -}} -->
+<!-- This actually just generates a link on the site's title -->
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
       <a href="{{ .Site.BaseURL }}"><img class="app-header-avatar" src="{{ .Site.Params.avatar | default "avatar.jpg" | relURL }}" alt="{{ .Site.Params.author | default "Shane Mulligan" }}" /></a>
       <h1>{{ .Site.Title }}</h1>
       <!--<p>{{ .Site.Params.description | default "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium." }}</p>-->
@@ -27,6 +36,8 @@
         <a href="/cv/">CV</a>
       </div>
 <div class="highlights">
+<a href="https://mullikine.gitlab.io/fortescue-blog-hugo/">★ Splunky Splog ★</a>
+<br />
 <a href="/posts/practical-macros-in-racket-and-how-to-work-with-them/">Practical macros in Racket</a>
 <br />
 <a href="/posts/github-search-with-bigquery/">Searching GitHub with BigQuery</a>
@@ -42,8 +53,6 @@
 <a href="/glossary.html">Glossary A-Z (70 topics)</a>
 <br />
 <a href="/codelingo-vs-linters/summary/">CodeLingo vs Linters</a>
-<br />
-<a href="https://mullikine.gitlab.io/fortescue-blog-hugo/">Splunky Splog (My blog for my job)</a>
 <br />
 <div class="taglist">
 <!--{{ partial "icon.html" (dict "ctx" $ "name" "tag") }}-->
