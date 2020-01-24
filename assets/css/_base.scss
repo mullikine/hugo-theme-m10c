@@ -25,7 +25,9 @@ article > p {
     /* display: inline-block; */
     opacity:0.3;
     border-radius: 2em;
-    border: 0.1em solid #E34234;
+    // border: 0.1em solid #E34234;
+    border: 0.1em dashed rgba(227, 66, 52, .4);
+    background: rgba(227, 66, 52, .2);
     /* background: #E34234; */
     font-family: 'Tillana', cursive;
     font-weight: bold;
