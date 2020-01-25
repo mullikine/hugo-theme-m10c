@@ -200,6 +200,13 @@ dl {
     border: 0.1em dashed #383838;
     background: url($binding-light);
     background: $dark-color ;
+    border-radius: 0.5em;
+
+    border: 0.1em solid rgba(150, 255, 200, .05);
+    background: url($binding-light);
+    // background: $dark-color ;
+    background: rgba(150, 255, 200, .02);
+
     /*font-family: Bookman Old Style, Baskerville, Palatino;*/
     font-family: 'PT Serif', serif;
 
