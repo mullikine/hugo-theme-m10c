@@ -20,6 +20,10 @@ body {
   color: $light-color;
 }
 
+.post-footer {
+    margin-top: 2em;
+}
+
 article > p, article > .post-footer > p {
     /* line-height:1.2em; */
     /* display: inline-block; */
