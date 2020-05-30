@@ -21,7 +21,6 @@
 <!-- {{ with .OutputFormats.Get "rss" -}} -->
 <!--     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} -->
 <!-- {{ end -}} -->
-<!-- This actually just generates a link on the site's title -->
 {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
@@ -114,7 +113,14 @@
 <a href="/posts/dwarf-fortress-macros-with-emacs-and-tmux/">Automating Dwarf Fortress</a>
 <br />
 </div>
+<!--
+scss is not currently generating, so I cant do this
 <a href="{{ .Site.BaseURL }}"><img class="app-header-rocket" src="{{ .Site.Params.rocket | default "rocket.jpg" | relURL }}" alt="{{ .Site.Params.author | default "Shane Mulligan" }}" /></a>
+
+this doesn't look good enough
+<a href="{{ .Site.BaseURL }}"><img class="app-header-avatar" src="{{ .Site.Params.rocket | default "rocket.jpg" | relURL }}" alt="{{ .Site.Params.author | default "Shane Mulligan" }}" /></a>
+-->
+
 </div>
 <div>
     </header>
