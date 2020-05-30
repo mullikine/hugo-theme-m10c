@@ -24,6 +24,21 @@
   /*border: .5rem solid #E34234;*/
 }
 
+.app-header-rocket {
+    // I'm not entirely sold on the shadow
+    // However, a very subtle shadow makes it easier on the peripheral vision
+    box-shadow: 0 0 1.5em rgba(218, 216, 101, .1);
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 100%;
+    padding: 1em;
+    // border: .2rem solid $primary-color;
+    // border: .5rem solid $primary-color;
+    // border: 0.3rem dashed rgba(218, 216, 101, .3);
+    background: rgba(218, 216, 101, .1);
+    /*border: .5rem solid #E34234;*/
+}
+
 .highlights {
 margin-top:0.5em;
 line-height:2em;
