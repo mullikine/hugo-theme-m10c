@@ -5,7 +5,7 @@
 
     {{ printf "%s%s%s" "tagpics/" .Title ".png" }}
 
-    {{ if (fileExists (printf "%s%s%s" "tagpics/" .Title ".png")) -}}
+    {{ if (fileExists (printf "%s%s%s" "static/tagpics/" .Title ".png")) -}}
     <img src="tagpics/{{ .Title }}.png" />
     {{- end }}
     <ul class="posts-list">
