@@ -3,12 +3,18 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Site.Params.description | default "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium." }}</p>
 
-    {{ printf "%s%s%s" "tagpics/" .Title ".png" }}
+    <!-- {{ printf "%s%s%s" "tagpics/" .Title ".png" }} -->
 
     {{ if (fileExists (printf "%s%s%s" "static/tagpics/" .Title ".png")) -}}
     <!-- <img src="tagpics/{{ .Title }}.png" /> -->
     <img style="height:250" src="{{ printf "%s%s%s" "tagpics/" .Title ".png" | absURL }}" />
     {{- end }}
+
+    {{ if (fileExists (printf "%s%s%s" "static/tagpics/" .Title ".gif")) -}}
+    <!-- <img src="tagpics/{{ .Title }}.gif" /> -->
+    <img style="height:250" src="{{ printf "%s%s%s" "tagpics/" .Title ".gif" | absURL }}" />
+    {{- end }}
+
     <ul class="posts-list">
       {{ range $index, $element := .Paginator.Pages }}
         <li class="posts-list-item">
