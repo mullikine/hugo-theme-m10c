@@ -7,7 +7,7 @@
 
     {{ if (fileExists (printf "%s%s%s" "static/tagpics/" .Title ".png")) -}}
     <!-- <img src="tagpics/{{ .Title }}.png" /> -->
-    <img style="max-height:100" src="{{ printf "%s%s%s" "tagpics/" .Title ".png" | absURL }}" />
+    <img style="max-height:250" src="{{ printf "%s%s%s" "tagpics/" .Title ".png" | absURL }}" />
     {{- end }}
     <ul class="posts-list">
       {{ range $index, $element := .Paginator.Pages }}
