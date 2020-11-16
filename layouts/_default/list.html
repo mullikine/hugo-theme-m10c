@@ -8,7 +8,7 @@
     <center>
     {{ if (fileExists (printf "%s%s%s" "static/tagpics/" .Title ".png")) -}}
     <!-- <img src="tagpics/{{ .Title }}.png" /> -->
-    <a href="{{ printf "%s%s%s" "tagpics/" .Title ".gif" | absURL }}"><img style="height:250" src="{{ printf "%s%s%s" "tagpics/" .Title ".png" | absURL }}" /></a>
+    <a href="{{ printf "%s%s%s" "tagpics/" .Title ".png" | absURL }}"><img style="height:250" src="{{ printf "%s%s%s" "tagpics/" .Title ".png" | absURL }}" /></a>
     {{- end }}
 
     {{ if (fileExists (printf "%s%s%s" "static/tagpics/" .Title ".gif")) -}}
